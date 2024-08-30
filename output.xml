@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.2 on win32)" generated="2024-08-13T10:15:24.029930" rpa="false" schemaversion="5">
+<suite id="s1" name="Ajouter_produit_au_panier" source="c:\Users\redar\Documents\RobotFramwrk-Jumia\SC04Ajouter_produit_au_panier.robot">
+<test id="s1-t1" name="CT16-Vérification du stock avant ajout" line="201">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:15:24.394585" level="INFO">Opening browser 'edge' to base url 'https://www.jumia.ma/'.</msg>
+<msg time="2024-08-13T10:15:25.014687" level="WARN">The msedgedriver version (126.0.2592.87) detected in PATH at C:\edgedriver\msedgedriver.exe might not be compatible with the detected MicrosoftEdge version (127.0.2651.98); currently, msedgedriver 127.0.2651.98 is recommended for MicrosoftEdge 127.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${URL}</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-13T10:15:24.394585" elapsed="4.015292"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-13T10:15:28.413613" elapsed="0.114081"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=#pop .cls</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:15:28.530951" elapsed="0.113872"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:15:28.648098" level="INFO">Clicking element 'css=#pop .cls'.</msg>
+<arg>css=#pop .cls</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T10:15:28.644823" elapsed="0.184326"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'accepter les cookies')]</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:15:28.834698" elapsed="0.094220"/>
+</kw>
+<kw name="Humanize Delay">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:15:33.941195" level="INFO">Slept 5 seconds.</msg>
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:15:28.934726" elapsed="5.006469"/>
+</kw>
+<status status="PASS" start="2024-08-13T10:15:28.934726" elapsed="5.007465"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:15:33.957557" level="INFO">Clicking button 'xpath=//button[contains(text(), 'accepter les cookies')]'.</msg>
+<arg>xpath=//button[contains(text(), 'accepter les cookies')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T10:15:33.956560" elapsed="0.227818"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[@class='cls' and @aria-label='Fermer la bannière']</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:15:34.189211" elapsed="0.050184"/>
+</kw>
+<kw name="Humanize Delay">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:15:39.243607" level="INFO">Slept 5 seconds.</msg>
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:15:34.242084" elapsed="5.001523"/>
+</kw>
+<status status="PASS" start="2024-08-13T10:15:34.240394" elapsed="5.003213"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:15:39.245119" level="INFO">Clicking button 'xpath=//button[@class='cls' and @aria-label='Fermer la bannière']'.</msg>
+<arg>xpath=//button[@class='cls' and @aria-label='Fermer la bannière']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T10:15:39.243607" elapsed="0.101173"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[@href='/electronique/']//span[text()='TV &amp; Hi Tech']</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:15:39.346401" elapsed="0.041468"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:15:39.388870" level="INFO">Simulating Mouse Over on element 'xpath=//a[@href='/electronique/']//span[text()='TV &amp; Hi Tech']'.</msg>
+<arg>xpath=//a[@href='/electronique/']//span[text()='TV &amp; Hi Tech']</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-08-13T10:15:39.388870" elapsed="0.286104"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[@href='/mlp-tv-qled/']</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:15:39.674974" elapsed="0.100433"/>
+</kw>
+<kw name="Humanize Delay">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:15:44.778697" level="INFO">Slept 5 seconds.</msg>
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:15:39.777402" elapsed="5.001295"/>
+</kw>
+<status status="PASS" start="2024-08-13T10:15:39.777402" elapsed="5.001295"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:15:44.779695" level="INFO">Clicking element 'xpath=//a[@href='/mlp-tv-qled/']'.</msg>
+<arg>xpath=//a[@href='/mlp-tv-qled/']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T10:15:44.779695" elapsed="1.054253"/>
+</kw>
+<kw name="Humanize Delay">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:15:50.837521" level="INFO">Slept 5 seconds.</msg>
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:15:45.835884" elapsed="5.001637"/>
+</kw>
+<status status="PASS" start="2024-08-13T10:15:45.834885" elapsed="5.003625"/>
+</kw>
+<kw name="Dynamic Scroll To Element">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-08-13T10:15:50.844495" elapsed="0.358728"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:15:52.204779" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:15:51.203223" elapsed="1.001556"/>
+</kw>
+<arg>${XPATH_TV_SAMSUNG}</arg>
+<status status="PASS" start="2024-08-13T10:15:50.842502" elapsed="1.362277"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TV_SAMSUNG_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:15:52.204779" elapsed="0.022475"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:15:52.227254" level="INFO">Double clicking element '//a[@href='/samsung-televiseur-55-q60c-qled-4k-qa55q60cauxmv-65144794.html']/ancestor::article//footer//button[contains(@class, 'add') and contains(text(),'Ajouter au panier')]'.</msg>
+<arg>${TV_SAMSUNG_BUTTON}</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T10:15:52.227254" elapsed="0.327332"/>
+</kw>
+<kw name="Humanize Delay">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:15:57.558191" level="INFO">Slept 5 seconds.</msg>
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:15:52.557574" elapsed="5.000617"/>
+</kw>
+<status status="PASS" start="2024-08-13T10:15:52.555581" elapsed="5.002610"/>
+</kw>
+<kw name="Click Button Multiple Times">
+<while condition="${index} &lt; ${times}">
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:15:57.561707" elapsed="0.026968"/>
+</kw>
+<msg time="2024-08-13T10:15:57.589611" level="INFO">${is_visible} = True</msg>
+<var>${is_visible}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-08-13T10:15:57.561707" elapsed="0.027904"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_visible}">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:15:57.589611" elapsed="0.016170"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:15:57.613807" level="INFO">Clicking element '//a[@href='/samsung-televiseur-55-q60c-qled-4k-qa55q60cauxmv-65144794.html']/ancestor::article//footer//button[@type='button' and @class='btn _prim _qty -pas' and @aria-label='augmenter la quantité panier']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T10:15:57.613807" elapsed="0.096710"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:16:00.711236" level="INFO">Slept 3 seconds.</msg>
+<arg>${delay}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:15:57.710517" elapsed="3.000719"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T10:16:00.711236" level="INFO">${index} = 1</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T10:16:00.711236" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T10:15:57.589611" elapsed="3.121625"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>Element is no longer visible after ${index} clicks, stopping the loop.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T10:16:00.711236" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T10:16:00.711236" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T10:16:00.711236" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T10:15:57.589611" elapsed="3.121625"/>
+</if>
+<status status="PASS" start="2024-08-13T10:15:57.558191" elapsed="3.153045"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:00.714599" elapsed="0.015807"/>
+</kw>
+<msg time="2024-08-13T10:16:00.730406" level="INFO">${is_visible} = True</msg>
+<var>${is_visible}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-08-13T10:16:00.713827" elapsed="0.016579"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_visible}">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:00.734920" elapsed="0.012551"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:16:00.747471" level="INFO">Clicking element '//a[@href='/samsung-televiseur-55-q60c-qled-4k-qa55q60cauxmv-65144794.html']/ancestor::article//footer//button[@type='button' and @class='btn _prim _qty -pas' and @aria-label='augmenter la quantité panier']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T10:16:00.747471" elapsed="0.089015"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:16:03.838837" level="INFO">Slept 3 seconds.</msg>
+<arg>${delay}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:16:00.838323" elapsed="3.000514"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T10:16:03.838837" level="INFO">${index} = 2</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T10:16:03.838837" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T10:16:00.734920" elapsed="3.103917"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>Element is no longer visible after ${index} clicks, stopping the loop.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T10:16:03.838837" elapsed="0.001552"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T10:16:03.840389" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T10:16:03.838837" elapsed="0.001552"/>
+</branch>
+<status status="PASS" start="2024-08-13T10:16:00.734920" elapsed="3.105469"/>
+</if>
+<status status="PASS" start="2024-08-13T10:16:00.711236" elapsed="3.129153"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:03.840389" elapsed="0.019484"/>
+</kw>
+<msg time="2024-08-13T10:16:03.859873" level="INFO">${is_visible} = True</msg>
+<var>${is_visible}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-08-13T10:16:03.840389" elapsed="0.019484"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_visible}">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:03.861150" elapsed="0.017672"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:16:03.878822" level="INFO">Clicking element '//a[@href='/samsung-televiseur-55-q60c-qled-4k-qa55q60cauxmv-65144794.html']/ancestor::article//footer//button[@type='button' and @class='btn _prim _qty -pas' and @aria-label='augmenter la quantité panier']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T10:16:03.878822" elapsed="0.075189"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:16:06.955395" level="INFO">Slept 3 seconds.</msg>
+<arg>${delay}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:16:03.954011" elapsed="3.001384"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T10:16:06.956397" level="INFO">${index} = 3</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T10:16:06.955395" elapsed="0.001002"/>
+</kw>
+<status status="PASS" start="2024-08-13T10:16:03.861150" elapsed="3.095247"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>Element is no longer visible after ${index} clicks, stopping the loop.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T10:16:06.956397" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T10:16:06.956397" elapsed="0.001030"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T10:16:06.956397" elapsed="0.001030"/>
+</branch>
+<status status="PASS" start="2024-08-13T10:16:03.861150" elapsed="3.096277"/>
+</if>
+<status status="PASS" start="2024-08-13T10:16:03.840389" elapsed="3.117038"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:06.959492" elapsed="0.023327"/>
+</kw>
+<msg time="2024-08-13T10:16:06.982819" level="INFO">${is_visible} = True</msg>
+<var>${is_visible}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-08-13T10:16:06.958492" elapsed="0.024327"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_visible}">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:06.983847" elapsed="0.018628"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:16:07.002475" level="INFO">Clicking element '//a[@href='/samsung-televiseur-55-q60c-qled-4k-qa55q60cauxmv-65144794.html']/ancestor::article//footer//button[@type='button' and @class='btn _prim _qty -pas' and @aria-label='augmenter la quantité panier']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T10:16:07.002475" elapsed="0.081536"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:16:10.085743" level="INFO">Slept 3 seconds.</msg>
+<arg>${delay}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:16:07.085007" elapsed="3.000736"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T10:16:10.085743" level="INFO">${index} = 4</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T10:16:10.085743" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T10:16:06.983847" elapsed="3.101896"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>Element is no longer visible after ${index} clicks, stopping the loop.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T10:16:10.085743" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T10:16:10.085743" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T10:16:10.085743" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T10:16:06.982819" elapsed="3.102924"/>
+</if>
+<status status="PASS" start="2024-08-13T10:16:06.957427" elapsed="3.128316"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:10.085743" elapsed="0.020215"/>
+</kw>
+<msg time="2024-08-13T10:16:10.105958" level="INFO">${is_visible} = True</msg>
+<var>${is_visible}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-08-13T10:16:10.085743" elapsed="0.020215"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_visible}">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:10.105958" elapsed="0.022347"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:16:10.129378" level="INFO">Clicking element '//a[@href='/samsung-televiseur-55-q60c-qled-4k-qa55q60cauxmv-65144794.html']/ancestor::article//footer//button[@type='button' and @class='btn _prim _qty -pas' and @aria-label='augmenter la quantité panier']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T10:16:10.129378" elapsed="0.074591"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:16:13.205999" level="INFO">Slept 3 seconds.</msg>
+<arg>${delay}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:16:10.204543" elapsed="3.001456"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T10:16:13.206736" level="INFO">${index} = 5</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T10:16:13.205999" elapsed="0.000737"/>
+</kw>
+<status status="PASS" start="2024-08-13T10:16:10.105958" elapsed="3.100778"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>Element is no longer visible after ${index} clicks, stopping the loop.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T10:16:13.206736" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T10:16:13.206736" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T10:16:13.206736" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T10:16:10.105958" elapsed="3.100778"/>
+</if>
+<status status="PASS" start="2024-08-13T10:16:10.085743" elapsed="3.120993"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:13.206736" elapsed="0.018469"/>
+</kw>
+<msg time="2024-08-13T10:16:13.225205" level="INFO">${is_visible} = True</msg>
+<var>${is_visible}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-08-13T10:16:13.206736" elapsed="0.018469"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_visible}">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:13.225205" elapsed="0.020110"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:16:13.245315" level="INFO">Clicking element '//a[@href='/samsung-televiseur-55-q60c-qled-4k-qa55q60cauxmv-65144794.html']/ancestor::article//footer//button[@type='button' and @class='btn _prim _qty -pas' and @aria-label='augmenter la quantité panier']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T10:16:13.245315" elapsed="0.086432"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:16:16.332473" level="INFO">Slept 3 seconds.</msg>
+<arg>${delay}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:16:13.331747" elapsed="3.000726"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T10:16:16.332473" level="INFO">${index} = 6</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T10:16:16.332473" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T10:16:13.225205" elapsed="3.107268"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>Element is no longer visible after ${index} clicks, stopping the loop.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T10:16:16.332473" elapsed="0.001825"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T10:16:16.334298" elapsed="0.000829"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T10:16:16.332473" elapsed="0.002654"/>
+</branch>
+<status status="PASS" start="2024-08-13T10:16:13.225205" elapsed="3.109922"/>
+</if>
+<status status="PASS" start="2024-08-13T10:16:13.206736" elapsed="3.128391"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:16.335127" elapsed="0.065824"/>
+</kw>
+<msg time="2024-08-13T10:16:16.404992" level="INFO">${is_visible} = True</msg>
+<var>${is_visible}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-08-13T10:16:16.335127" elapsed="0.069865"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_visible}">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:16.404992" elapsed="0.023774"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:16:16.428766" level="INFO">Clicking element '//a[@href='/samsung-televiseur-55-q60c-qled-4k-qa55q60cauxmv-65144794.html']/ancestor::article//footer//button[@type='button' and @class='btn _prim _qty -pas' and @aria-label='augmenter la quantité panier']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T10:16:16.428766" elapsed="0.079149"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:16:19.508920" level="INFO">Slept 3 seconds.</msg>
+<arg>${delay}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:16:16.508185" elapsed="3.000735"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T10:16:19.508920" level="INFO">${index} = 7</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T10:16:19.508920" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T10:16:16.404992" elapsed="3.103928"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>Element is no longer visible after ${index} clicks, stopping the loop.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T10:16:19.508920" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T10:16:19.508920" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T10:16:19.508920" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T10:16:16.404992" elapsed="3.103928"/>
+</if>
+<status status="PASS" start="2024-08-13T10:16:16.335127" elapsed="3.173793"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:19.508920" elapsed="0.022488"/>
+</kw>
+<msg time="2024-08-13T10:16:19.531584" level="INFO">${is_visible} = True</msg>
+<var>${is_visible}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-08-13T10:16:19.508920" elapsed="0.022664"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_visible}">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:19.531584" elapsed="0.016718"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:16:19.548302" level="INFO">Clicking element '//a[@href='/samsung-televiseur-55-q60c-qled-4k-qa55q60cauxmv-65144794.html']/ancestor::article//footer//button[@type='button' and @class='btn _prim _qty -pas' and @aria-label='augmenter la quantité panier']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T10:16:19.548302" elapsed="0.074690"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:16:22.625122" level="INFO">Slept 3 seconds.</msg>
+<arg>${delay}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:16:19.622992" elapsed="3.002130"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T10:16:22.625122" level="INFO">${index} = 8</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T10:16:22.625122" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T10:16:19.531584" elapsed="3.093538"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>Element is no longer visible after ${index} clicks, stopping the loop.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T10:16:22.625122" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T10:16:22.625122" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T10:16:22.625122" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T10:16:19.531584" elapsed="3.095591"/>
+</if>
+<status status="PASS" start="2024-08-13T10:16:19.508920" elapsed="3.118255"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:22.627175" elapsed="0.020168"/>
+</kw>
+<msg time="2024-08-13T10:16:22.647343" level="INFO">${is_visible} = True</msg>
+<var>${is_visible}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-08-13T10:16:22.627175" elapsed="0.020168"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_visible}">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:22.647343" elapsed="0.017499"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:16:22.664842" level="INFO">Clicking element '//a[@href='/samsung-televiseur-55-q60c-qled-4k-qa55q60cauxmv-65144794.html']/ancestor::article//footer//button[@type='button' and @class='btn _prim _qty -pas' and @aria-label='augmenter la quantité panier']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T10:16:22.664842" elapsed="0.045183"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:16:25.711501" level="INFO">Slept 3 seconds.</msg>
+<arg>${delay}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:16:22.711049" elapsed="3.000452"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T10:16:25.711501" level="INFO">${index} = 9</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T10:16:25.711501" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T10:16:22.647343" elapsed="3.064158"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>Element is no longer visible after ${index} clicks, stopping the loop.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T10:16:25.711501" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T10:16:25.711501" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T10:16:25.711501" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T10:16:22.647343" elapsed="3.064158"/>
+</if>
+<status status="PASS" start="2024-08-13T10:16:22.627175" elapsed="3.084326"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:25.711501" elapsed="0.018463"/>
+</kw>
+<msg time="2024-08-13T10:16:25.729964" level="INFO">${is_visible} = True</msg>
+<var>${is_visible}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-08-13T10:16:25.711501" elapsed="0.018463"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_visible}">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:25.729964" elapsed="0.020344"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:16:25.750308" level="INFO">Clicking element '//a[@href='/samsung-televiseur-55-q60c-qled-4k-qa55q60cauxmv-65144794.html']/ancestor::article//footer//button[@type='button' and @class='btn _prim _qty -pas' and @aria-label='augmenter la quantité panier']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T10:16:25.750308" elapsed="0.043607"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:16:28.794304" level="INFO">Slept 3 seconds.</msg>
+<arg>${delay}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:16:25.793915" elapsed="3.000389"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T10:16:28.795332" level="INFO">${index} = 10</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T10:16:28.794304" elapsed="0.001028"/>
+</kw>
+<status status="PASS" start="2024-08-13T10:16:25.729964" elapsed="3.065368"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>Element is no longer visible after ${index} clicks, stopping the loop.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T10:16:28.795332" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T10:16:28.795332" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T10:16:28.795332" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T10:16:25.729964" elapsed="3.065368"/>
+</if>
+<status status="PASS" start="2024-08-13T10:16:25.711501" elapsed="3.083831"/>
+</iter>
+<status status="PASS" start="2024-08-13T10:15:57.558191" elapsed="31.237141"/>
+</while>
+<arg>${TV_SAMSUNG_PLUS_BUTTON}</arg>
+<arg>10</arg>
+<arg>3</arg>
+<status status="PASS" start="2024-08-13T10:15:57.558191" elapsed="31.237141"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CART_BUTTON_XPATH}</arg>
+<arg>10S</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-13T10:16:28.795332" elapsed="0.022043"/>
+</kw>
+<kw name="Humanize Delay">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:16:33.817922" level="INFO">Slept 5 seconds.</msg>
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:16:28.817375" elapsed="5.000547"/>
+</kw>
+<status status="PASS" start="2024-08-13T10:16:28.817375" elapsed="5.000547"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-13T10:16:33.819722" level="INFO">Clicking element '//a[contains(@href, '/cart/') and contains(., 'Panier')]'.</msg>
+<arg>${CART_BUTTON_XPATH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T10:16:33.817922" elapsed="0.639007"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T10:16:44.458418" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T10:16:34.456929" elapsed="10.001489"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-13T10:16:44.458418" elapsed="2.294806"/>
+</kw>
+<status status="PASS" start="2024-08-13T10:15:24.394585" elapsed="82.359637"/>
+</test>
+<status status="PASS" start="2024-08-13T10:15:24.044889" elapsed="82.711999"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ajouter_produit_au_panier">Ajouter_produit_au_panier</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-13T10:15:25.014687" level="WARN">The msedgedriver version (126.0.2592.87) detected in PATH at C:\edgedriver\msedgedriver.exe might not be compatible with the detected MicrosoftEdge version (127.0.2651.98); currently, msedgedriver 127.0.2651.98 is recommended for MicrosoftEdge 127.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
